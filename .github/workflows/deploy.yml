@@ -38,6 +38,8 @@ jobs:
         with:
           target: dist
           theme: ../.github/assets/directory-list.css
+        env:
+          TZ: Asia/Tokyo
 
       - name: ⛅️ Deploy to the Production
         uses: cloudflare/wrangler-action@6d58852c35a27e6034745c5d0bc373d739014f7f # v3.13.0
