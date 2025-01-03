@@ -21,6 +21,10 @@ section {
   font-family: "LINE Seed JP", sans-serif;
 }
 
+ul {
+  width: fit-content;
+}
+
 code {
   font-family: "Fira Code", "HackGen35", monospace;
   filter: drop-shadow(
