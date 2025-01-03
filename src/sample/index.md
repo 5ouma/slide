@@ -154,7 +154,7 @@ _paginate: false
 
 ### Image Filters
 
-<span class="column">
+<div class="column">
 
 ![w:5em blur:10px](https://images.5ouma.me/avatar/default.png)
 blur
@@ -171,7 +171,7 @@ invert
 ![w:5em opacity:0.5](https://images.5ouma.me/avatar/default.png)
 opacity
 
-</span>
+</div>
 
 ---
 
@@ -188,7 +188,7 @@ _paginate: false
 
 ### Column
 
-<span class="column">
+<div class="column">
 
 Column 1
 Description 1
@@ -199,7 +199,7 @@ Description 2
 Column 3
 Description 3
 
-</span>
+</div>
 
 ---
 
