@@ -3,4 +3,5 @@ output: ./dist
 themeSet: ./theme
 options:
   emoji:
+    shortcode: true
     unicode: false
