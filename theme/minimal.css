@@ -32,3 +32,8 @@ code {
     0 3px 3px color-mix(in srgb, var(--color-background) 60%, black)
   );
 }
+
+blockquote {
+  width: fit-content;
+  margin: auto;
+}
