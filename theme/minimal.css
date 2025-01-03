@@ -12,15 +12,12 @@
   color-scheme: light dark;
   --light: #f4f4f4;
   --dark: #242424;
-}
-
-h1,
-section {
-  color: light-dark(var(--dark), var(--light));
+  --color-foreground: light-dark(var(--dark), var(--light));
+  --color-background: light-dark(var(--light), var(--dark));
+  --color-background-code: light-dark(var(--light), var(--dark));
 }
 
 section {
-  background-color: light-dark(var(--light), var(--dark));
   font-family: "LINE Seed JP", sans-serif;
 }
 
