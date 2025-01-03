@@ -20,6 +20,9 @@
 
 section {
   font-family: "LINE Seed JP", sans-serif;
+  &::after {
+    content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
+  }
 }
 
 ul {
