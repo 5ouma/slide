@@ -1,0 +1,6 @@
+inputDir: ./src
+output: ./dist
+themeSet: ./theme
+options:
+  emoji:
+    unicode: false

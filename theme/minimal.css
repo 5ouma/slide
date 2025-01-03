@@ -1,0 +1,35 @@
+/*
+ * Minimal and Dynamic Marp Theme
+ * @theme minimal
+ * @auto-scaling true
+ */
+
+@import "uncover";
+@import url("https://cdn.jsdelivr.net/npm/line-seed-jp/line-seed-jp.css");
+@import url("https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css");
+
+:root {
+  color-scheme: light dark;
+  --light: #f4f4f4;
+  --dark: #242424;
+}
+
+h1,
+section {
+  color: light-dark(var(--dark), var(--light));
+}
+
+section {
+  background-color: light-dark(var(--light), var(--dark));
+  font-family: "LINE Seed JP", sans-serif;
+}
+
+code {
+  font-family: "Fira Code", "HackGen35", monospace;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}

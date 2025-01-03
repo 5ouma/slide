@@ -1,0 +1,15 @@
+{
+  "name": "slide",
+  "scripts": {
+    "dev": "marp -sd",
+    "build:html": "marp",
+    "build:images": "cpx 'src/*/images/*' dist",
+    "build:ogp": "marp --image png --allow-local-files",
+    "build": "run-p build:*"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.0.4",
+    "cpx2": "8.0.0",
+    "npm-run-all2": "7.0.2"
+  }
+}
