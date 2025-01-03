@@ -40,3 +40,7 @@ code {
 .column > * {
   flex: 1;
 }
+
+.highlight {
+  background: linear-gradient(transparent 85%, #eeee44 25%);
+}
