@@ -1,0 +1,18 @@
+/*
+ * Add Several Useful Classes
+ * @theme utils
+ * @auto-scaling true
+ */
+
+.column {
+  display: flex;
+  gap: 1rem;
+}
+
+.column > * {
+  flex: 1;
+}
+
+.highlight {
+  background: linear-gradient(transparent 85%, #eeee44 25%);
+}

@@ -5,6 +5,7 @@
  */
 
 @import "uncover";
+@import "utils";
 @import url("https://cdn.jsdelivr.net/npm/line-seed-jp/line-seed-jp.css");
 @import url("https://cdn.jsdelivr.net/npm/firacode/distr/fira_code.css");
 
@@ -30,17 +31,4 @@ code {
   filter: drop-shadow(
     0 3px 3px color-mix(in srgb, var(--color-background) 60%, black)
   );
-}
-
-.column {
-  display: flex;
-  gap: 1rem;
-}
-
-.column > * {
-  flex: 1;
-}
-
-.highlight {
-  background: linear-gradient(transparent 85%, #eeee44 25%);
 }
