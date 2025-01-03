@@ -28,6 +28,7 @@ section {
   }
 }
 
+ol,
 ul {
   width: fit-content;
 }
