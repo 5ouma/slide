@@ -1,0 +1,48 @@
+name: 🚀 Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+      - .github/workflows/deploy.yml
+  workflow_dispatch:
+
+jobs:
+  Deploy:
+    permissions:
+      contents: read
+      deployments: write
+    runs-on: Ubuntu-Latest
+
+    steps:
+      - name: 🚚 Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: 🍞 Setup Bun with Cache
+        uses: 5ouma/utils/setup-bun-with-cache@e75ba55758d177eea9fc1445767481bb93c9634c # main
+
+      - name: 🛠️ Build
+        run: bun run build
+
+      - name: 🖼️ Replace OGP Path
+        run: |
+          while read -r file; do
+            dir="$(echo "$file" | cut -d '/' -f 2)"
+            sed -i "s?\"index.png\"?\"${{ secrets.HOST_URL }}/$dir/index.png\"?g" "$file"
+          done < <(find dist -name '*.html')
+
+      - name: 📁 Generate Breadcrumb List
+        uses: yKicchan/generate-directory-listing-action@6483acd60b7b3464bac8aa3b34a5b993c371dede # v1.0.2
+        with:
+          target: dist
+          theme: ../.github/assets/directory-list.css
+
+      - name: ⛅️ Deploy to the Production
+        uses: cloudflare/wrangler-action@6d58852c35a27e6034745c5d0bc373d739014f7f # v3.13.0
+        with:
+          command: pages deploy dist --project-name='${{ github.event.repository.name }}'
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
