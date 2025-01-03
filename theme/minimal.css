@@ -18,6 +18,7 @@
   --color-background-code: light-dark(var(--light), var(--dark));
   --color-header: color-mix(in srgb, transparent 60%, var(--color-foreground));
   --color-header-shadow: transparent;
+  --color-background-paginate: transparent;
 }
 
 section {
