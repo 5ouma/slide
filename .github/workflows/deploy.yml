@@ -14,7 +14,7 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    runs-on: Ubuntu-Latest
+    runs-on: macOS-Latest
 
     steps:
       - name: 🚚 Checkout Repository
@@ -30,7 +30,7 @@ jobs:
         run: |
           while read -r file; do
             dir="$(echo "$file" | cut -d '/' -f 2)"
-            sed -i "s?\"index.png\"?\"${{ secrets.HOST_URL }}/$dir/index.png\"?g" "$file"
+            sed -i '' "s?\"index.png\"?\"${{ secrets.HOST_URL }}/$dir/index.png\"?g" "$file"
           done < <(find dist -name '*.html')
 
       - name: 📁 Generate Breadcrumb List

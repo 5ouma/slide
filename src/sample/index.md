@@ -7,7 +7,7 @@ description: A sample slide for Marp
 image: index.png
 ---
 
-# Sample Slide
+# 🎦 Sample スライド
 
 ## Basic Syntax 1
 
