@@ -23,6 +23,9 @@ section {
 
 code {
   font-family: "Fira Code", "HackGen35", monospace;
+  filter: drop-shadow(
+    0 3px 3px color-mix(in srgb, var(--color-background) 60%, black)
+  );
 }
 
 .columns {
