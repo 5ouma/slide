@@ -3,4 +3,6 @@ headingDivider: 2
 theme: minimal
 title:
 description:
+header:
+paginate: true
 image: index.png

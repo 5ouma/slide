@@ -1,13 +1,17 @@
 ---
 marp: true
 theme: minimal
-paginate: true
 title: Sample Slide
 description: A sample slide for Marp
+header: Sample Slide
+paginate: true
 image: index.png
 ---
 
-<!-- _paginate: false -->
+<!--
+_header: ""
+_paginate: false
+-->
 
 # 🎦 Sample スライド
 
