@@ -1,6 +1,6 @@
 inputDir: ./src
 output: ./dist
-themeSet: ./theme
+themeSet: ./themes
 options:
   emoji:
     shortcode: true
