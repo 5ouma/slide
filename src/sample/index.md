@@ -1,121 +1,204 @@
 ---
 marp: true
-headingDivider: 2
 theme: minimal
+paginate: true
 title: Sample Slide
 description: A sample slide for Marp
 image: index.png
 ---
 
+<!-- _paginate: false -->
+
 # 🎦 Sample スライド
 
-## Basic Syntax 1
+---
 
-### Bold
+<!-- _paginate: false -->
+
+## Markdown
+
+---
+
+<!-- footer: Markdown -->
+
+### Headers
+
+# # H1 <!-- markdownlint-disable MD025 -->
+
+## ## H2
+
+### ### H3
+
+#### #### H4
+
+---
+
+### Text Styles
 
 **bold text**
 
-### Italic
-
 _italicized text_
+
+~~strikethrough text~~
+
+`inline code`
+
+---
 
 ### Blockquote
 
 > blockquote
+> blockquote
 
-## Basic Syntax 2
+---
 
-### Ordered List
+### List
 
-1. First item
-2. Second item
+<span class="column">
 
-### Unordered List
+1. Ordered List 1
+   1. Ordered List 1-1
+      1. Ordered List 1-1-1
+2. Ordered List 2
+   1. Ordered List 2-1
+   2. Ordered List 2-2
 
-- First item
-- Second item
+- Unordered List 1
+  - Unordered List 1-1
+    - Unordered List 1-1-1
+- Unordered List 2
+  - Unordered List 2-1
+  - Unordered List 2-2
 
-## Basic Syntax 3
+</span>
 
-### Code
-
-`const add = (a, b) => a + b;`
+---
 
 ### Link
 
-[Markdown Guide](https://www.markdownguide.org)
+[5ouma/slide](https://github.com/5ouma/slide)
 
-## Basic Syntax 4
+---
 
-### Remote Image
+### Image
 
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
+<span class="column">
 
-### Local Image
+![remote alt text](https://www.markdownguide.org/assets/images/tux.png)
+Remote Image
 
-![alt text](./images/sonoma.png)
+<br />
 
-## Extended Syntax 1
+![local alt text](./images/sonoma.png)
+Local Image
+
+</span>
+
+---
 
 ### Table
 
-| Syntax    | Description |
-| :-------- | ----------: |
-| Header    |       Title |
-| Paragraph |        Text |
+|  Center   | Left       |       Right |
+| :-------: | :--------- | ----------: |
+|  Header   | Left Title | Right Title |
+| Paragraph | Left Text  |  Right Text |
 
-## Extended Syntax 2
+---
 
 ### Fenced Code Block
 
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+```ts
+type args = { a: number; b: number };
+const add = ({ a, b }: args): number => a + b;
+
+const result = add(1, 2);
+console.log(result); // 3
 ```
 
-## Extended Syntax 3
-
-### Strikethrough
-
-~~The world is flat.~~
+---
 
 ### Task List
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+- [x] Completed task
+- [ ] Incomplete task 1
+- [ ] Incomplete task 2
 
-## Extended Syntax 4
+---
 
 ### Emoji
 
-That is so funny! :joy:
+`:joy:` → :joy:
 
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
+---
 
-## Marp Syntax
+<!--
+_footer: ""
+_paginate: false
+ -->
+
+### Marp Syntax
+
+---
+
+<!-- footer: Marp Syntax -->
+
+### Background Image
+
+![bg contain right:30%](https://images.5ouma.me/avatar/default.png)
+
+---
+
+### Image Filters
+
+<span class="column">
+
+![w:5em blur:10px](https://images.5ouma.me/avatar/default.png)
+blur
+![w:5em brightness:0.5](https://images.5ouma.me/avatar/default.png)
+brightness
+
+![w:5em drop-shadow:0,5px,10px,gray](https://images.5ouma.me/avatar/default.png)
+drop-shadow
+![w:5em grayscale](https://images.5ouma.me/avatar/default.png)
+grayscale
+
+![w:5em invert](https://images.5ouma.me/avatar/default.png)
+invert
+![w:5em opacity:0.5](https://images.5ouma.me/avatar/default.png)
+opacity
+
+</span>
+
+---
+
+<!--
+_footer: ""
+_paginate: false
+ -->
+
+## CSS Styling
+
+---
+
+<!-- footer: CSS Styling -->
 
 ### Column
 
-<span class="columns">
-
-<span>
+<span class="column">
 
 Column 1
-
 Description 1
 
-</span>
-
-<span>
-
 Column 2
-
 Description 2
 
-</span>
+Column 3
+Description 3
 
 </span>
+
+---
+
+### Highlight
+
+<span class="highlight">Text</span>
