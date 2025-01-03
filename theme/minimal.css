@@ -16,6 +16,8 @@
   --color-foreground: light-dark(var(--dark), var(--light));
   --color-background: light-dark(var(--light), var(--dark));
   --color-background-code: light-dark(var(--light), var(--dark));
+  --color-header: color-mix(in srgb, transparent 60%, var(--color-foreground));
+  --color-header-shadow: transparent;
 }
 
 section {
@@ -39,4 +41,9 @@ code {
 blockquote {
   width: fit-content;
   margin: auto;
+}
+
+header,
+footer {
+  right: auto;
 }
