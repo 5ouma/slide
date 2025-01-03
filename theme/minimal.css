@@ -32,8 +32,11 @@ code {
   );
 }
 
-.columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.column {
+  display: flex;
   gap: 1rem;
+}
+
+.column > * {
+  flex: 1;
 }
