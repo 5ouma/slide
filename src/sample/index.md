@@ -148,7 +148,9 @@ _paginate: false
 
 ### Background Image
 
-![bg contain right:30%](https://images.5ouma.me/avatar/default.png)
+![bg contain right:30%][icon]
+
+[icon]: https://images.5ouma.me/avatar/default.png
 
 ---
 
@@ -156,19 +158,19 @@ _paginate: false
 
 <div class="column">
 
-![w:5em blur:10px](https://images.5ouma.me/avatar/default.png)
+![w:4em blur:10px][icon]
 blur
-![w:5em brightness:0.5](https://images.5ouma.me/avatar/default.png)
+![w:4em brightness:0.5][icon]
 brightness
 
-![w:5em drop-shadow:0,5px,10px,gray](https://images.5ouma.me/avatar/default.png)
+![w:4em drop-shadow:0,5px,10px,gray][icon]
 drop-shadow
-![w:5em grayscale](https://images.5ouma.me/avatar/default.png)
+![w:4em grayscale][icon]
 grayscale
 
-![w:5em invert](https://images.5ouma.me/avatar/default.png)
+![w:4em invert][icon]
 invert
-![w:5em opacity:0.5](https://images.5ouma.me/avatar/default.png)
+![w:4em opacity:0.5][icon]
 opacity
 
 </div>
