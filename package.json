@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "marp -sd",
     "build:html": "marp",
-    "build:images": "cpx 'src/*/images/*' dist",
+    "build:images": "cpx 'src/**/images/*' dist",
     "build:ogp": "marp --image png --allow-local-files",
     "build": "run-p build:*"
   },
