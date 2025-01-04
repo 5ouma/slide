@@ -15,10 +15,10 @@
   --dark: #242424;
   --color-foreground: light-dark(var(--dark), var(--light));
   --color-background: light-dark(var(--light), var(--dark));
-  --color-background-code: light-dark(var(--light), var(--dark));
-  --color-header: color-mix(in srgb, transparent 60%, var(--color-foreground));
+  --color-header: var(--color-foreground);
   --color-header-shadow: transparent;
   --color-background-paginate: transparent;
+  --color-background-code: var(--color-background);
 }
 
 section {
@@ -26,6 +26,11 @@ section {
   &::after {
     content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
   }
+}
+
+header,
+footer {
+  right: auto;
 }
 
 ol,
@@ -43,9 +48,4 @@ code {
 blockquote {
   width: fit-content;
   margin: auto;
-}
-
-header,
-footer {
-  right: auto;
 }
