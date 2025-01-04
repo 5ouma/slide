@@ -1,9 +1,9 @@
 ---
 marp: true
 theme: minimal
-title: Sample Slide
+title: 🎦 Sample スライド
 description: A sample slide for Marp
-header: Sample Slide
+header: 🎦 Sample スライド
 paginate: true
 image: index.png
 ---
