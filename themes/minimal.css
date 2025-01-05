@@ -51,14 +51,14 @@ pre {
 }
 
 pre > code {
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.375rem;
-  font-size: 0.6rem;
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+  font-size: 0.85em;
 }
 
 :not(pre) > code {
-  padding: 0.25rem 0.375rem;
-  border-radius: 0.3rem;
+  padding: 0.25em 0.375em;
+  border-radius: 0.3em;
 }
 
 code {
