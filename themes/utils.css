@@ -18,5 +18,8 @@
 }
 
 .highlight {
-  background: linear-gradient(transparent 85%, var(--color-highlight-border) 15%);
+  background: linear-gradient(
+    transparent 85%,
+    var(--color-highlight-border) 15%
+  );
 }
