@@ -30,7 +30,7 @@ jobs:
       - name: 🖼️ Replace OGP Path
         run: |
           while read -r file; do
-            dir="$(echo "$file" | cut -d '/' -f 2)"
+            dir="$(echo "$file" | cut -d '/' -f 2- | xargs dirname)"
             sed -i '' "s?\"index.png\"?\"${{ secrets.HOST_URL }}/$dir/index.png\"?g" "$file"
           done < <(find dist -name '*.html')
 
