@@ -1,6 +1,7 @@
 inputDir: ./src
 output: ./dist
 themeSet: ./themes
+allowLocalFiles: true
 options:
   emoji:
     shortcode: true
