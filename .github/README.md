@@ -4,13 +4,12 @@
 
 **🎦 Presentation as Code**
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/5ouma/slide?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/5ouma/slide?style=flat-square)
-[![GitHub last commit](https://img.shields.io/github/last-commit/5ouma/slide?style=flat-square)](https://github.com/5ouma/slide/commit/HEAD)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/5ouma/slide?style=flat-square)](https://github.com/5ouma/slide/commits/main)
 <br />
-[![Deploy](https://img.shields.io/github/actions/workflow/status/5ouma/slide/deploy.yml?label=deploy&style=flat-square)](https://github.com/5ouma/slide/actions/workflows/deploy.yml)
+
+[![Deploy](https://img.shields.io/github/actions/workflow/status/5ouma/slide/deploy.yml?label=Deploy&style=flat-square)](https://github.com/5ouma/slide/actions/workflows/deploy.yml)
 [![pre-commit](https://img.shields.io/github/actions/workflow/status/5ouma/slide/pre-commit.yml?label=pre-commit&style=flat-square)](https://github.com/5ouma/slide/actions/workflows/pre-commit.yml)
+
+![Repobeats Analytics Image](https://repobeats.axiom.co/api/embed/e046fa1f10173e062d5a00919a80acfd88394415.svg)
 
 </div>
 
