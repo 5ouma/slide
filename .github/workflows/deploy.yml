@@ -38,9 +38,8 @@ jobs:
         uses: yKicchan/generate-directory-listing-action@5394a35a894df73f47e6f6925cbab737256f33a1 # v1.1.0
         with:
           target: dist
+          viewType: list
           theme: ../.github/assets/directory-list.css
-        env:
-          TZ: Asia/Tokyo
 
       - name: ⛅️ Deploy to the Production
         uses: cloudflare/wrangler-action@6d58852c35a27e6034745c5d0bc373d739014f7f # v3.13.0
