@@ -2,6 +2,7 @@ inputDir: ./src
 output: ./dist
 themeSet: ./themes
 allowLocalFiles: true
+parallel: true
 options:
   emoji:
     shortcode: true
