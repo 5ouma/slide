@@ -8,7 +8,7 @@
   --color-highlight-border: #eeee44;
 }
 
-.column {
+.columns {
   display: flex;
   gap: 1em;
   > * {

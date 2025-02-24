@@ -58,7 +58,7 @@ _italicized text_
 
 ### List
 
-<div class="column">
+<div class="columns">
 
 1. Ordered List 1
    1. Ordered List 1-1
@@ -86,7 +86,7 @@ _italicized text_
 
 ### Image
 
-<div class="column">
+<div class="columns">
 
 ![remote alt text](https://www.markdownguide.org/assets/images/tux.png)
 Remote Image
@@ -156,7 +156,7 @@ _paginate: false
 
 ### Image Filters
 
-<div class="column">
+<div class="columns">
 
 ![w:4em blur:10px][icon]
 blur
@@ -190,7 +190,7 @@ _paginate: false
 
 ### Column
 
-<div class="column">
+<div class="columns">
 
 Column 1
 Description 1
