@@ -58,7 +58,7 @@ _italicized text_
 
 ### List
 
-<span class="column">
+<div class="column">
 
 1. Ordered List 1
    1. Ordered List 1-1
@@ -74,7 +74,7 @@ _italicized text_
   - Unordered List 2-1
   - Unordered List 2-2
 
-</span>
+</div>
 
 ---
 
@@ -86,7 +86,7 @@ _italicized text_
 
 ### Image
 
-<span class="column">
+<div class="column">
 
 ![remote alt text](https://www.markdownguide.org/assets/images/tux.png)
 Remote Image
@@ -96,7 +96,7 @@ Remote Image
 ![local alt text](./images/sonoma.png)
 Local Image
 
-</span>
+</div>
 
 ---
 
