@@ -33,10 +33,12 @@ jobs:
         run: bun run build
 
       - name: 🖼️ Replace OGP Path
+        env:
+          HOST_URL: ${{ vars.HOST_URL }}
         run: |
           while read -r file; do
             dir="$(echo "$file" | cut -d '/' -f 2- | xargs dirname)"
-            sed -i '' "s?\"index.png\"?\"${{ vars.HOST_URL }}/$dir/index.png\"?g" "$file"
+            sed -i '' "s?\"index.png\"?\"$HOST_URL/$dir/index.png\"?g" "$file"
           done < <(find dist -name '*.html')
 
       - name: 📁 Generate Breadcrumb List
