@@ -13,7 +13,7 @@ on:
 permissions: {}
 
 jobs:
-  Deploy:
+  deploy:
     permissions:
       contents: read
       deployments: write
@@ -21,34 +21,34 @@ jobs:
     timeout-minutes: 1
 
     steps:
-      - name: 🚚 Checkout Repository
+      - name: 🚚 Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
 
-      - name: 🍞 Setup Bun with Cache
+      - name: 🍞 Setup Bun with cache
         uses: 5ouma/utils/setup-bun-with-cache@084665e94a15908074ca1400dd51b48243674167 # v0.4.1
 
       - name: 🛠️ Build
         run: bun run build
 
-      - name: 🖼️ Replace OGP Path
-        env:
-          HOST_URL: ${{ vars.HOST_URL }}
+      - name: 🖼️ Replace OGP path
         run: |
           while read -r file; do
             dir="$(echo "$file" | cut -d '/' -f 2- | xargs dirname)"
             sed -i '' "s?\"index.png\"?\"$HOST_URL/$dir/index.png\"?g" "$file"
           done < <(find dist -name '*.html')
+        env:
+          HOST_URL: ${{ vars.HOST_URL }}
 
-      - name: 📁 Generate Breadcrumb List
+      - name: 📁 Generate breadcrumb list
         uses: yKicchan/generate-directory-listing-action@5394a35a894df73f47e6f6925cbab737256f33a1 # v1.1.0
         with:
           target: dist
           viewType: list
           theme: ../.github/assets/directory-list.css
 
-      - name: ⛅️ Deploy to the Production
+      - name: ⛅️ Deploy to production
         uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3.14.1
         with:
           command: pages deploy dist --project-name='${{ github.event.repository.name }}'
