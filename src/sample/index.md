@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: minimal
-title: 🎦 Sample スライド
 description: A sample slide for Marp
 header: 🎦 Sample スライド
 paginate: true
