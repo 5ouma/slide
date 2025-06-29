@@ -10,6 +10,7 @@ permissions: {}
 
 jobs:
   pre-commit:
+    name: 🚸 Pre-commit
     runs-on: Ubuntu-Latest
     timeout-minutes: 3
 
