@@ -2,10 +2,10 @@
   "name": "slide",
   "scripts": {
     "dev": "marp -sd",
+    "build": "run-p build:*",
     "build:html": "marp",
-    "build:images": "cpx 'src/**/images/*' dist",
-    "build:ogp": "marp --image png",
-    "build": "run-p build:*"
+    "build:images": "cpx 'src/**/images/**' dist",
+    "build:ogp": "marp --image png"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "4.2.0",
