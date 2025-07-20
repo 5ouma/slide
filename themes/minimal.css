@@ -41,6 +41,12 @@ footer {
   right: auto;
 }
 
+h1,
+h2,
+h3 {
+  margin-bottom: 1em;
+}
+
 ol,
 ul {
   width: fit-content;
