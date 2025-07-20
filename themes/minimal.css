@@ -61,6 +61,13 @@ ul {
   width: fit-content;
 }
 
+li {
+  ol,
+  ul {
+    margin-left: 0;
+  }
+}
+
 pre {
   filter: none;
 }
