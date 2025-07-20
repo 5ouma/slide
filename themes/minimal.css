@@ -47,6 +47,15 @@ h3 {
   margin-bottom: 1em;
 }
 
+p:has(p, a),
+li {
+  img {
+    height: auto;
+    width: 1em;
+    vertical-align: -5px;
+  }
+}
+
 ol,
 ul {
   width: fit-content;
