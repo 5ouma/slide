@@ -8,7 +8,7 @@
     "build:ogp": "marp --image png"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "4.2.0",
+    "@marp-team/marp-cli": "4.2.1",
     "cpx2": "8.0.0",
     "npm-run-all2": "8.0.4"
   }
