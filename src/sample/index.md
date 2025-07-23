@@ -206,4 +206,14 @@ Description 3
 
 ### Highlight
 
+<div class="columns">
+
+<div class="highlight">
+
+Text
+
+</div>
+
 <span class="highlight">Text</span>
+
+</div>
