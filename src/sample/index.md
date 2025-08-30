@@ -26,13 +26,13 @@ _paginate: false
 
 ### Headers
 
-# # H1 <!-- markdownlint-disable MD025 -->
+# # Header 1 <!-- markdownlint-disable MD025 -->
 
-## ## H2
+## ## Header 2
 
-### ### H3
+### ### Header 3
 
-#### #### H4
+#### #### Header 4
 
 ---
 
@@ -42,16 +42,16 @@ _paginate: false
 
 _italicized text_
 
-~~strikethrough text~~
+~~strike through text~~
 
 `inline code`
 
 ---
 
-### Blockquote
+### Block quote
 
-> blockquote
-> blockquote
+> block quote
+> block quote
 
 ---
 
@@ -87,12 +87,12 @@ _italicized text_
 
 <div class="columns">
 
-![remote alt text](https://www.markdownguide.org/assets/images/tux.png)
+![Remote alt text](https://www.markdownguide.org/assets/images/tux.png)
 Remote Image
 
 <br />
 
-![local alt text](./images/sonoma.png)
+![Local alt text](./images/sonoma.png)
 Local Image
 
 </div>
@@ -165,7 +165,7 @@ brightness
 ![w:4em drop-shadow:0,5px,10px,gray][icon]
 drop-shadow
 ![w:4em grayscale][icon]
-grayscale
+gray scale
 
 ![w:4em invert][icon]
 invert

@@ -1,0 +1,48 @@
+filters:
+  allowlist:
+    allow:
+      - 5ouma
+      - Marp
+
+rules:
+  # Global
+  max-comma: true
+  alive-link: true
+  no-empty-element: true
+  date-weekday-mismatch: true
+  terminology: true
+  period-in-list-item: true
+  period-in-header: true
+  no-nfd: true
+  "@textlint-rule/no-invalid-control-character": true
+  "@textlint-rule/no-unmatched-pair": true
+  footnote-order: true
+  doubled-spaces: true
+  "@textlint-rule/no-duplicate-abbr": true
+  no-bold-paragraph: true
+  no-curly-quotes: true
+
+  # English
+  spelling: true
+  stop-words: true
+  en-capitalization: true
+
+  # Japanese
+  max-ten: true
+  no-mix-dearu-desumasu: true
+  no-doubled-joshi: true
+  no-double-negative-ja: true
+  no-hankaku-kana: true
+  ja-no-weak-phrase: true
+  ja-no-redundant-expression: true
+  ja-no-abusage: true
+  no-mixed-zenkaku-and-hankaku-alphabet: true
+  no-dropping-the-ra: true
+  no-doubled-conjunctive-particle-ga: true
+  no-doubled-conjunction: true
+  ja-no-mixed-period: true
+  ja-unnatural-alphabet: true
+  "@textlint-ja/no-synonyms": true
+  ja-no-orthographic-variants: true
+  no-hoso-kinshi-yogo: true
+  ja-overlooked-typo: true
