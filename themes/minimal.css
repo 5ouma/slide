@@ -72,6 +72,13 @@ pre {
   filter: none;
 }
 
+code {
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: var(--color-border-code);
+  font-family: "Fira Code", "HackGen35", monospace;
+}
+
 pre > code {
   padding: 1em 1.5em;
   border-radius: 0.5em;
@@ -81,13 +88,6 @@ pre > code {
 :not(pre) > code {
   padding: 0.25em 0.375em;
   border-radius: 0.3em;
-}
-
-code {
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: var(--color-border-code);
-  font-family: "Fira Code", "HackGen35", monospace;
 }
 
 blockquote {

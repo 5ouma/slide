@@ -5,11 +5,15 @@
     "build": "run-p build:*",
     "build:html": "marp",
     "build:images": "cpx 'src/**/images/**' dist",
-    "build:ogp": "marp --image png"
+    "build:ogp": "marp --image png",
+    "check:biome": "biome check"
   },
   "dependencies": {
     "@marp-team/marp-cli": "4.2.3",
     "cpx2": "8.0.0",
     "npm-run-all2": "8.0.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.2"
   }
 }
