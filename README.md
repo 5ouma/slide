@@ -6,6 +6,7 @@
 
 <br />
 
+[![CI](https://img.shields.io/github/actions/workflow/status/5ouma/slide/ci.yml?label=CI&style=flat-square)](https://github.com/5ouma/slide/actions/workflows/ci.yml)
 [![Deploy](https://img.shields.io/github/actions/workflow/status/5ouma/slide/deploy.yml?label=Deploy&style=flat-square)](https://github.com/5ouma/slide/actions/workflows/deploy.yml)
 [![pre-commit](https://img.shields.io/github/actions/workflow/status/5ouma/slide/pre-commit.yml?label=pre-commit&style=flat-square)](https://github.com/5ouma/slide/actions/workflows/pre-commit.yml)
 
