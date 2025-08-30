@@ -1,0 +1,47 @@
+name: 🎽 CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**/*.md
+      - themes/*.css
+      - .github/workflows/ci.yml
+
+permissions: {}
+
+jobs:
+  biome-check:
+    name: 🏞️ Biome Check
+    runs-on: Ubuntu-Latest
+    timeout-minutes: 1
+
+    steps:
+      - name: 🚚 Check out repository
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+
+      - name: 🍞 Set up Bun with Cache
+        uses: 5ouma/utils/setup-bun-with-cache@d5ab9f3aeb93aa4a47b02cbbd156ae7ecf259c16 # v0.4.4
+
+      - name: 🏞️ Biome check
+        run: bun run check:biome
+
+  textlint:
+    name: ✏️ textlint
+    runs-on: Ubuntu-Latest
+    timeout-minutes: 1
+
+    steps:
+      - name: 🚚 Check out repository
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+
+      - name: 🍞 Set up Bun with cache
+        uses: 5ouma/utils/setup-bun-with-cache@d5ab9f3aeb93aa4a47b02cbbd156ae7ecf259c16 # v0.4.4
+
+      - name: ✏️ Run textlint
+        run: bun run check:textlint
