@@ -48,7 +48,7 @@
         "textlint-rule-period-in-header": "0.1.2",
         "textlint-rule-period-in-list-item": "1.0.1",
         "textlint-rule-spelling": "0.3.0",
-        "textlint-rule-stop-words": "5.1.3",
+        "textlint-rule-stop-words": "5.1.4",
         "textlint-rule-terminology": "5.2.16",
       },
     },
@@ -1138,7 +1138,7 @@
 
     "textlint-rule-spelling": ["textlint-rule-spelling@0.3.0", "", { "dependencies": { "@textlint/regexp-string-matcher": "^1.1.0", "nspell": "^2.1.2" }, "peerDependencies": { "textlint": ">=11.7.6" } }, "sha512-PaHThskZI6+8NZ4FsYov6MB4rQcpMw5X1fGfoFYcqCQtmgt4k212ncCpdoZqV6jS2GU1cxNB/DoKBuk/RE24LQ=="],
 
-    "textlint-rule-stop-words": ["textlint-rule-stop-words@5.1.3", "", { "dependencies": { "lodash": "^4.17.21", "textlint-rule-helper": "^2.5.0" } }, "sha512-nBtBD9FOVgoOgc5NO903N1GJ6LDQtboc4z/2LBF1FKThie5e+Oa38huc9tX+iELbT5ftnIbpyWoLc97CRi6aGw=="],
+    "textlint-rule-stop-words": ["textlint-rule-stop-words@5.1.4", "", { "dependencies": { "textlint-rule-helper": "^2.5.0" } }, "sha512-juagMIzfmrgTK5uxqughtFqmG+NiBiqozAGFCBO25ci+PjZiBfBDeyr/kHshisFeanGtPY8p24Sbxv/g9u1Efg=="],
 
     "textlint-rule-terminology": ["textlint-rule-terminology@5.2.16", "", { "dependencies": { "strip-json-comments": "^5.0.3", "textlint-rule-helper": "^2.5.0" } }, "sha512-1HQotOLJb6kGAgmRYEA9KiIU+fQupZcOVpZEEhFwmRempvpNnhKowa7Zfpss2v6sbp8Ya+iXRs9xKGw+xheCbQ=="],
 
