@@ -55,23 +55,47 @@ _italicized text_
 
 ---
 
-### List
+### Bullet List
 
 <div class="columns">
 
-1. Ordered List 1
-   1. Ordered List 1-1
-      1. Ordered List 1-1-1
-2. Ordered List 2
-   1. Ordered List 2-1
-   2. Ordered List 2-2
+- Bullet 1
+  - Bullet 1-1
+  - Bullet 1-2
+- Bullet 2
+  - Bullet 2-1
+    - Bullet 2-1-1
 
-- Unordered List 1
-  - Unordered List 1-1
-    - Unordered List 1-1-1
-- Unordered List 2
-  - Unordered List 2-1
-  - Unordered List 2-2
+<!-- markdownlint-disable MD004 -->
+
+* Fragmented 1
+  * Fragmented 1-1
+  * Fragmented 1-2
+* Fragmented 2
+  * Fragmented 2-1
+    * Fragmented 2-1-1
+
+</div>
+
+---
+
+### Ordered List
+
+<div class="columns">
+
+1. Ordered 1
+   1. Ordered 1-1
+   2. Ordered 1-2
+2. Ordered 2
+   1. Ordered 2-1
+      1. Ordered 2-1-1
+
+1) Fragmented 1
+   1) Fragmented 1-1
+   2) Fragmented 1-2
+2) Fragmented 2
+   1) Fragmented 2-1
+      1) Fragmented 2-1-1
 
 </div>
 
