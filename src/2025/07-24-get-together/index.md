@@ -81,7 +81,7 @@ _paginate: false
 - Linuxの勉強
 
 [Cloudflare Workers]: https://workers.cloudflare.com
-[Cloudflare Workers logo]: https://workers.cloudflare.com/logo.svg
+[Cloudflare Workers logo]: https://raw.githubusercontent.com/cloudflare/workers.cloudflare.com/f185744/public/logo.svg
 [Deno Deploy]: https://deno.com/deploy
 [Deno Deploy logo]: https://github.com/denoland.png
 
@@ -119,7 +119,7 @@ _paginate: false
 [Misskey]: https://misskey-hub.net
 [Misskey logo]: https://assets.misskey-hub.net/public/icon.png
 [Immich]: https://immich.app
-[Immich logo]: https://immich.app/img/immich-logo.svg
+[Immich logo]: https://raw.githubusercontent.com/immich-app/discord-bot/12ea3db/images/immich-logo.svg
 [Paperless]: https://paperless-ngx.com
 [Paperless logo]: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/main/src-ui/src/assets/logo-notext.svg
 [Time Machine]: https://support.apple.com/104984
@@ -326,7 +326,7 @@ footer: ""
 
 </div>
 
-[JetKVM logo]: https://raw.githubusercontent.com/jetkvm/website/main/public/favicon.png
+[JetKVM logo]: https://raw.githubusercontent.com/jetkvm/website/52a6157/public/favicon.png
 [JetKVM]: https://jetkvm.com
 
 <!--
