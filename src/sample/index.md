@@ -204,6 +204,16 @@ Description 3
 
 ---
 
+### Color Inverted Section
+
+<!-- _class: inverted -->
+
+```html
+<!-- class: inverted -->
+```
+
+---
+
 ### Highlight
 
 <div class="columns">

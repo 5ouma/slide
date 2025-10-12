@@ -13,6 +13,8 @@
   color-scheme: light dark;
   --light: #f4f4f4;
   --dark: #242424;
+  --code-light: color-mix(in srgb, var(--light) 70%, white);
+  --code-dark: color-mix(in srgb, var(--dark) 90%, black);
   --color-foreground: light-dark(var(--dark), var(--light));
   --color-background: light-dark(var(--light), var(--dark));
   --color-header: var(--color-foreground);
@@ -23,10 +25,7 @@
     var(--color-foreground) 10%,
     var(--color-background)
   );
-  --color-background-code: light-dark(
-    color-mix(in srgb, var(--light) 70%, white),
-    color-mix(in srgb, var(--dark) 90%, black)
-  );
+  --color-background-code: light-dark(var(--code-light), var(--code-dark));
 }
 
 section {
@@ -34,6 +33,12 @@ section {
   &::after {
     content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
   }
+}
+
+section.inverted {
+  --color-foreground: light-dark(var(--light), var(--dark));
+  --color-background: light-dark(var(--dark), var(--light));
+  --color-background-code: light-dark(var(--code-dark), var(--code-light));
 }
 
 header,
