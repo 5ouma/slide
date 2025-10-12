@@ -13,7 +13,7 @@ image: index.png
 <!--
 _header: ""
 _footer: Souma (@5ouma)
-_paginate: false
+_paginate: skip
 -->
 
 <!--
@@ -300,7 +300,6 @@ MisskeyのファイルはR2に保存しているので、バックアップの�
 
 <!--
 footer: ""
-_paginate: false
 -->
 
 <div class="columns">
@@ -342,7 +341,7 @@ IP KVMを使って完全ヘッドレスな環境を構築したいです。
 <!--
 _header: ""
 _footer: Souma (@5ouma)
-_paginate: false
+_paginate: skip
 -->
 
 - Misskey: [**@5ouma@misskey.5ouma.me**](https://misskey.5ouma.me/@5ouma)
