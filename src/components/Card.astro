@@ -1,17 +1,17 @@
 ---
 import "../styles/global.css";
 
-type Props = { header: string; description: string; path: string };
-const { header, description, path } = Astro.props;
+type Props = { title: string; description: string; path: string };
+const { title, description, path } = Astro.props;
 ---
 
 <div class="card">
   <h2>
-    <a href={path}>{header}</a>
+    <a href={path}>{title}</a>
   </h2>
   <p>{description}</p>
   <div class="iframe-container">
-    <iframe src={path} title={header}></iframe>
+    <iframe src={path} title={title}></iframe>
   </div>
 </div>
 
