@@ -5,20 +5,39 @@ on:
     branches:
       - main
     paths:
-      - src/**/*.md
-      - themes/*.css
+      - src/slides/**/*.md
+      - "**.astro"
+      - "**.css"
       - bun.lock
       - .github/workflows/ci.yml
   pull_request:
     paths:
-      - src/**/*.md
-      - themes/*.css
+      - src/slides/**/*.md
+      - "**.astro"
+      - "**.css"
       - bun.lock
       - .github/workflows/ci.yml
 
 permissions: {}
 
 jobs:
+  astro-check:
+    name: 🚀 Astro Check
+    runs-on: Ubuntu-Latest
+    timeout-minutes: 1
+
+    steps:
+      - name: 🚚 Check out repository
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+
+      - name: 🍞 Set up Bun with cache
+        uses: 5ouma/utils/setup-bun-with-cache@a47767d34361e4483813b03abfb33b282694ab08 # v0.4.9
+
+      - name: 🚀 Astro check
+        run: bun run check:astro
+
   biome-check:
     name: 🏞️ Biome Check
     runs-on: Ubuntu-Latest

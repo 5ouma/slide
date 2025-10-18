@@ -6,5 +6,18 @@
     "useIgnoreFile": true
   },
   "formatter": { "indentStyle": "space" },
-  "css": { "formatter": { "enabled": true } }
+  "css": { "formatter": { "enabled": true } },
+  "overrides": [
+    {
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          }
+        }
+      }
+    }
+  ]
 }

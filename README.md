@@ -18,7 +18,7 @@
 
 ## 📝 Writing a New Slide
 
-1. Create a new directory in the `/src` with the name of the slide
+1. Create a new directory in the `/src/slides` with the name of the slide
 
 2. Create a new `index.md` file in the created directory
 
