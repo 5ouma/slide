@@ -230,10 +230,10 @@ Description 3
 
 ### Color Inverted Section
 
-<!-- _class: inverted -->
+<!-- _class: invert -->
 
 ```html
-<!-- class: inverted -->
+<!-- class: invert -->
 ```
 
 ---

@@ -35,7 +35,7 @@ section {
   }
 }
 
-section.inverted {
+section.invert {
   --color-foreground: light-dark(var(--light), var(--dark));
   --color-background: light-dark(var(--dark), var(--light));
   --color-background-code: light-dark(var(--code-dark), var(--code-light));
