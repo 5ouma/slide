@@ -1,4 +1,4 @@
-inputDir: ./src
+inputDir: ./src/slides
 output: ./dist
 themeSet: ./themes
 allowLocalFiles: true

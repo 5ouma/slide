@@ -4,10 +4,10 @@
     "dev": "marp -sd",
     "build": "run-p build:*",
     "build:html": "marp",
-    "build:images": "cpx 'src/**/images/**' dist",
+    "build:images": "cpx 'src/slides/**/images/**' dist",
     "build:ogp": "marp --image png",
     "check:biome": "biome check",
-    "check:textlint": "textlint src/**/*.md"
+    "check:textlint": "textlint src/slides/**/*.md"
   },
   "dependencies": {
     "@marp-team/marp-cli": "4.2.3",
