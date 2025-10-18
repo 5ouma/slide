@@ -1,0 +1,58 @@
+---
+import Card from "../components/Card.astro";
+import "../styles/global.css";
+
+type Slide = {
+  frontmatter: { header: string; description: string };
+  file: string;
+};
+const files = Object.values(
+  import.meta.glob("/src/slides/**/index.md", { eager: true }),
+) satisfies Slide[];
+const slides = files.reverse().map((slide) => {
+  const path = slide.file.split("/src/slides/")[1].replace("index.md", "");
+  return {
+    frontmatter: slide.frontmatter,
+    path: import.meta.env.DEV ? `http://localhost:8080/${path}` : path,
+  };
+});
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, viewport-fit=cover" />
+    <title>Souma's Slides</title>
+  </head>
+  <body>
+    <h1>Souma's Slides</h1>
+    <main>
+      {
+        slides.map((slide) => (
+          <Card
+            header={slide.frontmatter.header}
+            description={slide.frontmatter.description}
+            path={slide.path}
+          />
+        ))
+      }
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: "LINE Seed JP", sans-serif;
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 1200px;
+    background: var(--background);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 2rem;
+  }
+</style>

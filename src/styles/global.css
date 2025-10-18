@@ -1,0 +1,16 @@
+@import url("https://cdn.jsdelivr.net/npm/line-seed-jp/line-seed-jp.css");
+
+:root {
+  color-scheme: light dark;
+  --light: #f4f4f4;
+  --dark: #242424;
+  --container-light: color-mix(in srgb, var(--light) 70%, white);
+  --container-dark: color-mix(in srgb, var(--dark) 90%, black);
+  --foreground: light-dark(var(--dark), var(--light));
+  --background: light-dark(var(--light), var(--dark));
+  --background-container: light-dark(
+    var(--container-light),
+    var(--container-dark)
+  );
+  --border: color-mix(in srgb, var(--foreground) 30%, transparent);
+}
