@@ -18,11 +18,12 @@
 
 ## 📝 Writing a New Slide
 
-1. Create a new directory in the `/src/slides` with the name of the slide
+1. Create a new directory in the [`/src/slides`](./src/slides/) with the name of
+   the slide
 
 2. Create a new `index.md` file in the created directory
 
-3. Copy the YAML front matter from the `template.yml` file
+3. Copy the YAML front matter from the [`template.yml`](./template.yml) file
 
 4. Build the slide
 
