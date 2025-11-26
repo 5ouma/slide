@@ -19,7 +19,7 @@ jobs:
       contents: read
       deployments: write
     runs-on: macOS-Latest
-    timeout-minutes: 1
+    timeout-minutes: 2
 
     steps:
       - name: 🚚 Check out repository
