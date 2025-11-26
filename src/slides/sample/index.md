@@ -26,7 +26,7 @@ _paginate: false
 
 ### Headers
 
-# # Header 1 <!-- markdownlint-disable MD025 -->
+# # Header 1 <!-- rumdl-disable-line MD025 -->
 
 ## ## Header 2
 
@@ -66,7 +66,7 @@ _italicized text_
   - Bullet 2-1
     - Bullet 2-1-1
 
-<!-- markdownlint-disable MD004 -->
+<!-- rumdl-disable MD004 -->
 
 * Fragmented 1
   * Fragmented 1-1
