@@ -71,3 +71,20 @@ jobs:
 
       - name: ✏️ Run textlint
         run: bun run check:textlint
+
+  build-check:
+    name: 🛠️ Build Check
+    runs-on: Ubuntu-Latest
+    timeout-minutes: 1
+
+    steps:
+      - name: 🚚 Check out repository
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        with:
+          persist-credentials: false
+
+      - name: 🍞 Set up Bun with cache
+        uses: 5ouma/utils/setup-bun-with-cache@f0d974bfa84423faffd60e4337c744fc89ade698 # v0.7.1
+
+      - name: 🛠️ Build check
+        run: bun run build
