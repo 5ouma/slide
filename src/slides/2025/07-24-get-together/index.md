@@ -235,7 +235,7 @@ MisskeyのファイルはR2に保存しているので、バックアップの�
 
 <div>
 
-![UptimeRobot logo] **[UptimeRobot]**
+![Better Stack logo] **[Better Stack]**
 
 - 外形監視
 - ダウン通知
@@ -254,8 +254,8 @@ MisskeyのファイルはR2に保存しているので、バックアップの�
 
 </div>
 
-[UptimeRobot]: https://uptimerobot.com
-[UptimeRobot logo]: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/uptimerobot.svg
+[Better Stack]: https://betterstack.com
+[Better Stack logo]: https://github.com/BetterStackHQ.png
 [New Relic]: https://newrelic.com
 [New Relic logo]: https://companieslogo.com/img/orig/NEWR-973d0528.svg
 
