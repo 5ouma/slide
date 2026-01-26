@@ -33,7 +33,7 @@ jobs:
           persist-credentials: false
 
       - name: 🍞 Set up Bun with cache
-        uses: 5ouma/utils/setup-bun-with-cache@da6ac93770103bb5e35b8fae7e213628e324eb7a # v0.8.3
+        uses: 5ouma/utils/setup-bun-with-cache@e3ddd062e52b578a512e70d94994624f5fa914cd # v0.9.0
 
       - name: 🚀 Astro check
         run: bun run check:astro
@@ -50,7 +50,7 @@ jobs:
           persist-credentials: false
 
       - name: 🍞 Set up Bun with Cache
-        uses: 5ouma/utils/setup-bun-with-cache@da6ac93770103bb5e35b8fae7e213628e324eb7a # v0.8.3
+        uses: 5ouma/utils/setup-bun-with-cache@e3ddd062e52b578a512e70d94994624f5fa914cd # v0.9.0
 
       - name: 🏞️ Biome check
         run: bun run check:biome
@@ -67,7 +67,7 @@ jobs:
           persist-credentials: false
 
       - name: 🍞 Set up Bun with cache
-        uses: 5ouma/utils/setup-bun-with-cache@da6ac93770103bb5e35b8fae7e213628e324eb7a # v0.8.3
+        uses: 5ouma/utils/setup-bun-with-cache@e3ddd062e52b578a512e70d94994624f5fa914cd # v0.9.0
 
       - name: ✏️ Run textlint
         run: bun run check:textlint
@@ -84,7 +84,7 @@ jobs:
           persist-credentials: false
 
       - name: 🍞 Set up Bun with cache
-        uses: 5ouma/utils/setup-bun-with-cache@da6ac93770103bb5e35b8fae7e213628e324eb7a # v0.8.3
+        uses: 5ouma/utils/setup-bun-with-cache@e3ddd062e52b578a512e70d94994624f5fa914cd # v0.9.0
 
       - name: 🛠️ Build check
         run: bun run build
