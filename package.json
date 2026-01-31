@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@marp-team/marp-cli": "4.2.3",
-    "astro": "5.16.15",
+    "astro": "5.16.16",
     "cpx2": "8.0.0",
     "npm-run-all2": "8.0.4"
   },
