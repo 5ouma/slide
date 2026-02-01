@@ -3,7 +3,7 @@
 :root {
   color-scheme: light dark;
   --light: #f4f4f4;
-  --dark: #242424;
+  --dark: #1a1a1a;
   --container-light: color-mix(in srgb, var(--light) 70%, white);
   --container-dark: color-mix(in srgb, var(--dark) 90%, black);
   --foreground: light-dark(var(--dark), var(--light));
