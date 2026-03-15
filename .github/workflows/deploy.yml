@@ -19,6 +19,7 @@ jobs:
       contents: read
       deployments: write
     runs-on: macOS-Latest
+    environment: Deploy
     timeout-minutes: 2
 
     steps:
