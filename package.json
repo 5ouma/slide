@@ -15,7 +15,7 @@
     "check:textlint": "textlint src/slides/**/*.md"
   },
   "dependencies": {
-    "@marp-team/marp-cli": "4.2.3",
+    "@marp-team/marp-cli": "4.3.0",
     "astro": "5.18.1",
     "cpx2": "8.0.0",
     "npm-run-all2": "8.0.4"
