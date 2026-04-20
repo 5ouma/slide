@@ -63,6 +63,6 @@
     "textlint-rule-spelling": "0.3.0",
     "textlint-rule-stop-words": "5.2.0",
     "textlint-rule-terminology": "5.2.16",
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   }
 }
