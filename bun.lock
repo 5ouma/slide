@@ -5,7 +5,7 @@
     "": {
       "name": "slide",
       "dependencies": {
-        "@marp-team/marp-cli": "4.4.0",
+        "@marp-team/marp-cli": "4.4.1",
         "astro": "7.0.6",
         "cpx2": "9.0.0",
         "npm-run-all2": "9.0.2",
@@ -306,7 +306,7 @@
 
     "@kvs/types": ["@kvs/types@2.2.2", "", {}, "sha512-5lmBuah+wOdypBf0O9t6BoHrnq5hX5MlhEPTDPBNKN38ayQwVc5gYgJOBR3Dg4EF7OwL+1c7JNtWXQEJXXVXlg=="],
 
-    "@marp-team/marp-cli": ["@marp-team/marp-cli@4.4.0", "", { "dependencies": { "@marp-team/marp-core": "^4.3.0", "@marp-team/marpit": "^3.2.1", "chokidar": "^4.0.3", "cosmiconfig": "^9.0.1", "puppeteer-core": "^24.39.1", "serve-index": "^1.9.2", "tmp": "^0.2.5", "ws": "^8.19.0" }, "bin": { "marp": "marp-cli.js" } }, "sha512-fLBOZpi0mi7IoN+fXiCyGklbdROSE40DKv7LZa7en1mBd1XlQe5O7mE9KEzuYRKVbUMK4swrQqgcQ9WNNNoY6Q=="],
+    "@marp-team/marp-cli": ["@marp-team/marp-cli@4.4.1", "", { "dependencies": { "@marp-team/marp-core": "^4.3.1", "@marp-team/marpit": "^3.2.2", "chokidar": "^4.0.3", "cosmiconfig": "^9.0.2", "puppeteer-core": "^24.43.1", "serve-index": "^1.9.2", "tmp": "^0.2.7", "ws": "^8.21.0" }, "bin": { "marp": "marp-cli.js" } }, "sha512-1TQj/yfOcpIEjhmWVEoRjxWcwdQMsp5WsYjla58Cs6GVMW6b1+w6AwW2mi+W5LWdKHOjincmcfNZtyY3Bj9T1w=="],
 
     "@marp-team/marp-core": ["@marp-team/marp-core@4.3.1", "", { "dependencies": { "@marp-team/marpit": "^3.2.2", "@marp-team/marpit-svg-polyfill": "^2.1.0", "highlight.js": "^11.11.1", "katex": "^0.17.0", "mathjax-full": "^3.2.2", "postcss-selector-parser": "^7.1.4", "xss": "^1.0.15" } }, "sha512-qBNf+NZTGXAbxFLYax7A409C1HXnvNmxgK28zX+20Nv88plfTI54jkr41s0KJtWRnH/Ni0+1n4AqwNFOw5/gIg=="],
 
