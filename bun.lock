@@ -7,7 +7,7 @@
       "dependencies": {
         "@marp-team/marp-cli": "4.5.1",
         "astro": "7.3.1",
-        "cpx2": "9.0.0",
+        "cpx2": "9.0.2",
         "npm-run-all2": "9.0.3",
       },
       "devDependencies": {
@@ -596,7 +596,7 @@
 
     "cosmiconfig": ["cosmiconfig@9.0.2", "", { "dependencies": { "env-paths": "^2.2.1", "import-fresh": "^3.3.0", "js-yaml": "^4.1.0", "parse-json": "^5.2.0" }, "peerDependencies": { "typescript": ">=4.9.5" }, "optionalPeers": ["typescript"] }, "sha512-gtTZxTDau1wL7Y7zifc2dd8jHSK/k6BTx/2Xp/BpdlAdnlYWFVt7qhJqgwi7637yRwRQ3qL4ZidbB4I8tA5VOg=="],
 
-    "cpx2": ["cpx2@9.0.0", "", { "dependencies": { "debounce": "^3.0.0", "glob": "^13.0.0", "glob2base": "0.0.12", "ignore": "^7.0.5", "minimatch": "^10.0.1", "p-map": "^7.0.0", "shell-quote": "^1.8.0", "subarg": "^1.0.0" }, "bin": { "cpx": "bin/index.js" } }, "sha512-KRZGQCmHrM10xfLjrCBTQHpEIJgKtZyOOO5fygu9KE00IjQOL76FHjeON62R5PWS/W2J5ofgRJKF8rpUlEuLPQ=="],
+    "cpx2": ["cpx2@9.0.2", "", { "dependencies": { "debounce": "^3.0.0", "glob": "^13.0.0", "glob2base": "0.0.12", "ignore": "^7.0.5", "minimatch": "^10.0.1", "p-map": "^7.0.0", "shell-quote": "^1.8.0", "subarg": "^1.0.0" }, "bin": { "cpx": "bin/index.js" } }, "sha512-9k/+5lzpDdNGB6UwfSEfJxF/v2TsuOBZtF3xf8DFxpqtLTlWZo4svf/oOxQ0E7Of7mhVw8mQZkDz7nlCXtc1ig=="],
 
     "cross-spawn": ["cross-spawn@7.0.6", "", { "dependencies": { "path-key": "^3.1.0", "shebang-command": "^2.0.0", "which": "^2.0.1" } }, "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA=="],
 
