@@ -50,7 +50,7 @@ jobs:
           url: ${{ vars.HOST_URL }}
 
       - name: ⛅️ Deploy to production
-        uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
+        uses: cloudflare/wrangler-action@4e88846969242f7752bcfdaf5511bfbb3985ca47 # v4.1.1
         with:
           command: deploy --name=${{ github.event.repository.name }} --compatibility-date="$(date +%Y-%m-%d)" --assets=./dist
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
