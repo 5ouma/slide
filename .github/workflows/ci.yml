@@ -24,9 +24,15 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   astro-check:
     name: 🚀 Astro Check
+    permissions:
+      contents: read
     runs-on: Ubuntu-Slim
     timeout-minutes: 2
 
@@ -44,6 +50,8 @@ jobs:
 
   biome-check:
     name: 🏞️ Biome Check
+    permissions:
+      contents: read
     runs-on: Ubuntu-Slim
     timeout-minutes: 2
 
@@ -61,6 +69,8 @@ jobs:
 
   textlint:
     name: ✏️ textlint
+    permissions:
+      contents: read
     runs-on: Ubuntu-Slim
     timeout-minutes: 2
 
@@ -78,7 +88,9 @@ jobs:
 
   build-check:
     name: 🛠️ Build Check
-    runs-on: Ubuntu-Latest
+    permissions:
+      contents: read
+    runs-on: Ubuntu-24.04
     timeout-minutes: 2
 
     steps:

@@ -14,7 +14,11 @@ permissions: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
 
 jobs:
   deploy:
@@ -22,7 +26,7 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    runs-on: macOS-Latest
+    runs-on: macOS-26
     environment:
       name: Deploy
       deployment: false
