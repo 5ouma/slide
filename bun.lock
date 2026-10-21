@@ -18,7 +18,7 @@
         "@textlint-rule/textlint-rule-no-invalid-control-character": "3.0.0",
         "@textlint-rule/textlint-rule-no-unmatched-pair": "2.0.4",
         "dictionary-en": "4.0.0",
-        "sudachi-synonyms-dictionary": "19.0.0",
+        "sudachi-synonyms-dictionary": "20.0.0",
         "textlint": "15.8.0",
         "textlint-filter-rule-allowlist": "4.0.0",
         "textlint-rule-alive-link": "0.1.2",
@@ -1410,7 +1410,7 @@
 
     "subarg": ["subarg@1.0.0", "", { "dependencies": { "minimist": "^1.1.0" } }, "sha512-RIrIdRY0X1xojthNcVtgT9sjpOGagEUKpZdgBUi054OEPFo282yg+zE+t1Rj3+RqKq2xStL7uUHhY+AjbC4BXg=="],
 
-    "sudachi-synonyms-dictionary": ["sudachi-synonyms-dictionary@19.0.0", "", {}, "sha512-GLqRxHTmfaF34vj6GD3wYkcfrWnQ2HihvsTtgmewR/yTlB4ePeA1GI/W8eDhDshVgbVmla+I9C09RK154OGe+g=="],
+    "sudachi-synonyms-dictionary": ["sudachi-synonyms-dictionary@20.0.0", "", {}, "sha512-cWmi1X9UGaedI1AWcNmWCg9FNY0SzMMzJLFcxQAPCLaBSqYQIzTLEl/XJmRhrs6jx7jH6tTNCMMgNH/hPBXFaQ=="],
 
     "svgo": ["svgo@4.1.0", "", { "dependencies": { "commander": "^11.1.0", "css-select": "^6.0.0", "css-tree": "^3.0.1", "css-what": "^7.0.0", "csso": "^5.0.5", "picocolors": "^1.1.1", "sax": "1.6.1" }, "bin": { "svgo": "bin/svgo.js" } }, "sha512-bkxnTg1kSU0guhIBmibA6UUhrQmPVA1XsQLN+ylCd+UWzbnLkySOcXpyk1mrl05f+pcaCx2eHb+sp6BgMZWX+Q=="],
 
