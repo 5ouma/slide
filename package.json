@@ -18,7 +18,7 @@
     "@marp-team/marp-cli": "4.5.1",
     "astro": "7.4.2",
     "cpx2": "9.0.3",
-    "npm-run-all2": "9.0.3"
+    "npm-run-all2": "9.0.4"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
