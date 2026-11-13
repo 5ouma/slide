@@ -10,14 +10,19 @@ type Slide = {
 const files = Object.values(
   import.meta.glob("/src/slides/**/index.md", { eager: true }),
 ) satisfies Slide[];
-const slides = files.reverse().map((slide) => {
-  const path = slide.file.split("/src/slides/")[1].replace("index.md", "");
-  return {
-    title: slide.getHeadings()[0].text,
-    description: slide.frontmatter.description,
-    path: import.meta.env.DEV ? `http://localhost:8080/${path}` : path,
-  };
-});
+const slides = files
+  .reverse()
+  .map((slide) => {
+    const path = slide.file.split("/src/slides/")[1]?.replace("index.md", "");
+    return path
+      ? {
+          title: slide.getHeadings()[0]?.text ?? path.replace(/\/$/, ""),
+          description: slide.frontmatter.description,
+          path: import.meta.env.DEV ? `http://localhost:8080/${path}` : path,
+        }
+      : null;
+  })
+  .filter((slide): slide is NonNullable<typeof slide> => slide !== null);
 ---
 
 <!doctype html>
