@@ -37,7 +37,7 @@
         "textlint-rule-max-ten": "5.0.1",
         "textlint-rule-no-bold-paragraph": "1.0.0",
         "textlint-rule-no-curly-quotes": "1.0.0",
-        "textlint-rule-no-double-negative-ja": "2.0.1",
+        "textlint-rule-no-double-negative-ja": "2.0.2",
         "textlint-rule-no-doubled-conjunction": "3.0.1",
         "textlint-rule-no-doubled-conjunctive-particle-ga": "3.0.0",
         "textlint-rule-no-doubled-joshi": "5.1.1",
@@ -1408,7 +1408,7 @@
 
     "textlint-rule-no-curly-quotes": ["textlint-rule-no-curly-quotes@1.0.0", "", {}, "sha512-DFu2RJxIycW+rbX0zfLClShbg54tTKCC17kOrCCpv4PuwNjRz82lQAK+5wI4rDt23R9/2TsCuIK3Z/jHiEpdQw=="],
 
-    "textlint-rule-no-double-negative-ja": ["textlint-rule-no-double-negative-ja@2.0.1", "", { "dependencies": { "kuromojin": "^3.0.0" } }, "sha512-LRofmNt+nd2mp+AHmG0ltk9AlbzKbWPE+EToYQ1zORCd8N8suE1YxNEplz9OeQ59ea9ITtudDIWoqeHaZnbDsg=="],
+    "textlint-rule-no-double-negative-ja": ["textlint-rule-no-double-negative-ja@2.0.2", "", { "dependencies": { "kuromojin": "^3.1.0" } }, "sha512-OjqRZrs/W61wwJp6iUG5tsESy4LcZmPOkSd76GPEO3dejAJE/R0oM6mDT/0UE5X2Q6aUwDKXQvVgh4wL5AGYQw=="],
 
     "textlint-rule-no-doubled-conjunction": ["textlint-rule-no-doubled-conjunction@3.0.1", "", { "dependencies": { "kuromojin": "^3.0.0", "sentence-splitter": "^5.0.0", "textlint-rule-helper": "^2.3.1" } }, "sha512-fRJEiy0rkrmUDVdgzGiUKAgGngziUfsjL4eqY4a3YfFxXwtczOP+hyHfvLNrHOUI58Y6lNoLZpa5lNNXbzFyNg=="],
 
