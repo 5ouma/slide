@@ -30,7 +30,7 @@
         "textlint-rule-ja-no-mixed-period": "3.0.2",
         "textlint-rule-ja-no-orthographic-variants": "2.0.3",
         "textlint-rule-ja-no-redundant-expression": "4.0.2",
-        "textlint-rule-ja-no-weak-phrase": "2.0.0",
+        "textlint-rule-ja-no-weak-phrase": "2.0.1",
         "textlint-rule-ja-overlooked-typo": "0.0.1",
         "textlint-rule-ja-unnatural-alphabet": "2.0.1",
         "textlint-rule-max-comma": "4.0.0",
@@ -1394,7 +1394,7 @@
 
     "textlint-rule-ja-no-redundant-expression": ["textlint-rule-ja-no-redundant-expression@4.0.2", "", { "dependencies": { "@textlint/regexp-string-matcher": "^1.1.0", "kuromojin": "^3.1.0", "morpheme-match": "^2.0.4", "morpheme-match-all": "^2.0.5", "textlint-rule-helper": "^2.6.0", "textlint-util-to-string": "^3.3.4" } }, "sha512-x3F3aBIlUs24mxpWBfgEcMbgOyyeA/lPA2PwAw7b13Ss62Z2aY7T/j45RxCA0jnjRRF8STwB/wkijEZM2uOoPw=="],
 
-    "textlint-rule-ja-no-weak-phrase": ["textlint-rule-ja-no-weak-phrase@2.0.0", "", { "dependencies": { "kuromojin": "^3.0.0", "morpheme-match": "^2.0.4", "morpheme-match-all": "^2.0.5" } }, "sha512-jZ1/3VnE8Bz/p0CCe/+BVOmWE1cZwpDkjKb6hnq39nGk3OD4XPW7biYavK/4/mZhk4bh2+Vtu1xV26lg8d+vBw=="],
+    "textlint-rule-ja-no-weak-phrase": ["textlint-rule-ja-no-weak-phrase@2.0.1", "", { "dependencies": { "kuromojin": "^3.1.0", "morpheme-match": "^2.0.4", "morpheme-match-all": "^2.0.5" } }, "sha512-PzyudFjnYQKTxzvMBJXqPPrqwoe5zt05pJ9emOg++WiYYu6ZsIPflq6lQH1nd896DcOjFdknQsPbOH7kdDYyoA=="],
 
     "textlint-rule-ja-overlooked-typo": ["textlint-rule-ja-overlooked-typo@0.0.1", "", { "dependencies": { "@textlint/regexp-string-matcher": "^2.0.2", "match-index": "^1.0.3" } }, "sha512-eOs7E17h/PwsJ3sNRNf4mG1kZ2EZo3n9HL1kD4WMP5t5vnMNntjeQcc9JuVf9ITwVqKpWiQlEtLqHs046NVQMg=="],
 
